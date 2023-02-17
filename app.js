@@ -11,7 +11,7 @@ const path = require("path");
 // const { chdir, cwd } = require('process');
 
 app.use(cors({
-    origin: ["https://goalsmanager.onrender.com", "http://localhost:3000"],
+    origin: ["https://task-manager-nt2i.onrender.com/", "http://localhost:3000"],
     credentials: true,
 }))
 
