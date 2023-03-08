@@ -10,12 +10,6 @@ const bodyParser = require("body-parser");
 const path = require("path");
 // const { chdir, cwd } = require('process');
 
-app.use(cors({
-    origin: ["https://task-manager-nt2i.onrender.com", "http://localhost:3000"],
-    credentials: true,
-}))
-
-
 // app.get('/*', function (req, res) {
 //     console.log('__dirname',__dirname)
 //     console.log('ok',path.join(__dirname, '../client/public/index.html'));
