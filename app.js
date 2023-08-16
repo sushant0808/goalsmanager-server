@@ -7,17 +7,13 @@ const userRoute = require("./routes/UserRoute");
 const app = express();
 const bodyParser = require("body-parser");
 const path = require("path");
-// const { chdir, cwd } = require('process');
 
-// app.get('/*', function (req, res) {
-//     console.log('__dirname',__dirname)
-//     console.log('ok',path.join(__dirname, '../client/public/index.html'));
-//     res.sendFile(path.join(__dirname, '../client/public/index.html'), function (err) {
-//         if (err) {
-//             res.status(500).send(err)
-//         }
-//     })
-// })
+app.use(
+  cors({
+    origin: "https://task-manager-nt2i.onrender.com/",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  })
+);
 
 app.use(cookieParser());
 
