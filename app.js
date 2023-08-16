@@ -12,6 +12,7 @@ app.use(
   cors({
     origin: "https://task-manager-nt2i.onrender.com",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
   })
 );
 
