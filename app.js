@@ -10,7 +10,7 @@ const path = require("path");
 
 app.use(
   cors({
-    origin: "https://task-manager-nt2i.onrender.com/",
+    origin: "https://task-manager-nt2i.onrender.com",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
 );
