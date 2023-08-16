@@ -45,7 +45,7 @@ app.use("/", userRoute);
 mongoose
   .connect(process.env.DB)
   .then(() => {
-    console.log("Database connected ho gaya.....");
+    console.log("Database connected ho gaya......");
   })
   .catch((err) => {
     console.log(err);
