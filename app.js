@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/home", (req, res) => {
-  res.send("Executed...");
+  res.send("Executed....");
 });
 
 app.use("/", userRoute);
